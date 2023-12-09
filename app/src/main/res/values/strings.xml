@@ -6,4 +6,18 @@
     <string name="price">125</string>
     <string name="popular_flowers">Popular Flowers</string>
     <string name="details">Details</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="similar_products">Similar Products</string>
+    <string name="my_cart">My Cart</string>
+    <string name="address_details">Block no: 12/A/3,Street no: 7,New Yourk,361000</string>
+    <string name="change">Change</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="no_item_found">No Item Found</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="apply">Apply</string>
+    <string name="price_details">Price Details</string>
+    <string name="total_amount_payment">Total Amount Payment</string>
+    <string name="order">Order</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="coupon_discount">Coupon Discount</string>
 </resources>

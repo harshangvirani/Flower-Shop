@@ -36,7 +36,7 @@ fun PopularFlowerScreen(navController: NavHostController) {
             .background(text_hint_color)
             .verticalScroll(rememberScrollState()),
         topBar = {
-            TopAppBar(title = stringResource(id = R.string.popular_flowers)) {}
+            TopAppBar(title = stringResource(id = R.string.popular_flowers), showIcon = 1) {}
         }
     ) {
         it.calculateBottomPadding()

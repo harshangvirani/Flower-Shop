@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.app.flowerui.presentation.CartItemScrceen
+import com.app.flowerui.presentation.FlowersDetailsScreen
 import com.app.flowerui.presentation.ForgotpasswordScreen
 import com.app.flowerui.presentation.HomeScreen
 import com.app.flowerui.presentation.LoginScreen
@@ -34,6 +36,12 @@ fun Navigation() {
         }
         composable(Screens.PopularFlowersScreen.routes){
             PopularFlowerScreen(navController)
+        }
+        composable(Screens.FlowerDetailsScreen.routes){
+            FlowersDetailsScreen(navController)
+        }
+        composable(Screens.CartItemScreen.routes){
+            CartItemScrceen(navController)
         }
     }
 }

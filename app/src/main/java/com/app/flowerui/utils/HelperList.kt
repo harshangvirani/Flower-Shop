@@ -43,3 +43,19 @@ fun PopularFlowersList() = listOf<FlowerItemModal>(
     FlowerItemModal(flowerImages = R.drawable.ic_red_rose_bouquet, name = "Angle", price = 128),
     FlowerItemModal(flowerImages = R.drawable.ic_pink_rose_bouquet, name = "Rose", price = 12),
 )
+
+fun SliderListImageView() = listOf<SliderModal>(
+    SliderModal(icon = R.drawable.ic_red_rose_bouquet, pageNumber = 1),
+    SliderModal(icon = R.drawable.ic_pink_rose_bouquet, pageNumber = 2),
+    SliderModal(icon = R.drawable.ic_red_rose_bouquet, pageNumber = 3),
+    SliderModal(icon = R.drawable.ic_pink_rose_bouquet, pageNumber = 4),
+    SliderModal(icon = R.drawable.ic_red_rose_bouquet, pageNumber = 5),
+    SliderModal(icon = R.drawable.ic_pink_rose_bouquet, pageNumber = 6),
+)
+
+fun FlowerOrderListView() = listOf<FlowerItemModal>(
+    FlowerItemModal(flowerImages = R.drawable.ic_red_rose_bouquet, name = "Red Rose", price = 65),
+    FlowerItemModal(flowerImages = R.drawable.ic_pink_rose_bouquet, name = "Pink Rose", price = 12),
+    FlowerItemModal(flowerImages = R.drawable.ic_red_rose_bouquet, name = "Angle", price = 128),
+    FlowerItemModal(flowerImages = R.drawable.ic_pink_rose_bouquet, name = "Rose", price = 12),
+)

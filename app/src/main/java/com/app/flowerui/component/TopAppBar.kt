@@ -3,9 +3,11 @@ package com.app.flowerui.component
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.MoreVert
@@ -25,6 +27,7 @@ import com.app.flowerui.ui.theme.colorPrimary
 @Composable
 fun TopAppBar(
     title: String,
+    showIcon: Int,
     onBackClick: () -> Unit
 ) {
     Row(
@@ -49,28 +52,32 @@ fun TopAppBar(
             style = MaterialTheme.typography.titleLarge,
             color = colorPrimary,
         )
-
-        Row {
-            IconButton(onClick = { onBackClick }) {
-                Icon(
-                    imageVector = Icons.Default.Search,
-                    contentDescription = "On Back",
-                    tint = colorPrimary,
-                    modifier = Modifier.size(32.dp, 32.dp)
-                )
+        if (showIcon == 1) {
+            Row {
+                IconButton(onClick = { onBackClick }) {
+                    Icon(
+                        imageVector = Icons.Default.Search,
+                        contentDescription = "On Back",
+                        tint = colorPrimary,
+                        modifier = Modifier.size(32.dp, 32.dp)
+                    )
+                }
+                IconButton(onClick = { onBackClick }) {
+                    Icon(
+                        imageVector = Icons.Default.MoreVert,
+                        contentDescription = "On Back",
+                        tint = colorPrimary,
+                        modifier = Modifier.size(32.dp, 32.dp)
+                    )
+                }
             }
-            IconButton(onClick = { onBackClick }) {
-                Icon(
-                    imageVector = Icons.Default.MoreVert,
-                    contentDescription = "On Back",
-                    tint = colorPrimary,
-                    modifier = Modifier.size(32.dp, 32.dp)
-                )
-            }
+        }else{
+            Spacer(modifier = Modifier.width(0.dp))
+            Spacer(modifier = Modifier.width(0.dp))
         }
     }
 }
 
 @Preview
 @Composable
-fun TopAppBarPreview() = TopAppBar(title = "Popular Flowers") {}
+fun TopAppBarPreview() = TopAppBar(title = "Popular Flowers", showIcon = 0) {}
